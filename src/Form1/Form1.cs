@@ -14,13 +14,6 @@ namespace Stima2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = "";
-            richTextBox1.Text += "Args\n";
-            richTextBox1.Text += "BFS: " + radioButton1.Checked + "\n";
-            richTextBox1.Text += "DFS: " + radioButton2.Checked + "\n";
-            richTextBox1.Text += "Find All: " + checkBox1.Checked + "\n";
-            richTextBox1.Text += "FilePath: \"" + textBox1.Text + "\"" + "\n";
-            richTextBox1.Text += "FileName: \"" + textBox2.Text + "\"" + "\n";
 
             FileCrawler fc = new FileCrawler();
             if (radioButton1.Checked)
@@ -31,24 +24,24 @@ namespace Stima2
                 fc.DFS(textBox1.Text, checkBox1.Checked, textBox2.Text);
             }
 
-            richTextBox1.Text += "Result:\n";
             progressBar1.Value = 0;
             progressBar1.Maximum = fc.results.Count + fc.bfs_path.Count;
 
             GVisualizer GV = new GVisualizer(textBox1.Text);
             foreach (string res in fc.results)
             {
-                richTextBox1.Text += res + "\n";
+                //label1.Text = (progressBar1.Value / progressBar1.Maximum).ToString();
                 progressBar1.Value += 1;
+                label1.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
             }
-            richTextBox1.Text += "Path:\n";
             foreach (string ph in fc.bfs_path)
             {
                 GV.AddSearchEntry(ph);
-                richTextBox1.Text += ph + "\n";
                 progressBar1.Value += 1;
+                label1.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
             }
-            GV.Show();
+            panel1.Controls.Clear();
+            GV.Show(panel1);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -87,6 +80,11 @@ namespace Stima2
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

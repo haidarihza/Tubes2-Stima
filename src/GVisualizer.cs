@@ -26,17 +26,16 @@ namespace Stima2
             graph.FindNode(str).LabelText = name;
         }
 
-        public void Show()
+        private void Color(FileCrawler fc)
         {
-            Form f = new();
+            
+        }
+
+        public void Show(Panel p)
+        {
             viewer.Graph = graph;
-
-            f.SuspendLayout();
             viewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            f.Controls.Add(viewer);
-            f.ResumeLayout();
-
-            f.ShowDialog();
+            p.Controls.Add(viewer);
         }
     }
 }
