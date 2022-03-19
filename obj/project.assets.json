@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alif Yasa\\source\\repos\\Stima2\\Stima2\\Stima2.csproj",
+      "projectUniqueName": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\Stima2.csproj",
       "projectName": "Stima2",
-      "projectPath": "C:\\Users\\Alif Yasa\\source\\repos\\Stima2\\Stima2\\Stima2.csproj",
+      "projectPath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\Stima2.csproj",
       "packagesPath": "C:\\Users\\Alif Yasa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alif Yasa\\source\\repos\\Stima2\\Stima2\\obj\\",
+      "outputPath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alif Yasa\\AppData\\Roaming\\NuGet\\NuGet.Config",

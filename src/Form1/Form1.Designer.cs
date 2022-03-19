@@ -108,7 +108,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(149, 23);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "File Name.ex";
+            this.textBox2.Text = "File Name";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Form1
@@ -124,7 +124,7 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "STIMA - File Crawler";
+            this.Text = "File Crawler";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
