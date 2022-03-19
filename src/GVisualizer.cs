@@ -35,6 +35,7 @@ namespace Stima2
         {
             viewer.Graph = graph;
             viewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            p.Controls.Clear();
             p.Controls.Add(viewer);
         }
     }

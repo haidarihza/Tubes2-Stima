@@ -32,15 +32,14 @@ namespace Stima2
             {
                 //label1.Text = (progressBar1.Value / progressBar1.Maximum).ToString();
                 progressBar1.Value += 1;
-                label1.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
+                textBox3.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
             }
             foreach (string ph in fc.bfs_path)
             {
                 GV.AddSearchEntry(ph);
                 progressBar1.Value += 1;
-                label1.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
+                textBox3.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
             }
-            panel1.Controls.Clear();
             GV.Show(panel1);
         }
 
