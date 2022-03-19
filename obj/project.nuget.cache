@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "IsW29AT9kHspL6tg5ZfApASfJzIHtRmnKfYtN+KTSRIANTmvJlWYMH1OL2LWmctdJRRZFtZ1CMYAJ6IbKf6Ukw==",
+  "dgSpecHash": "Va1yIv/rVU6Xdm3yPKVYth8zJPch/QeavdX0an9oBWTRLFdzZFMLd3XtrOir34r7KUWmWACctTuA1/CyN5XFmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\Stima2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout\\1.1.11\\automaticgraphlayout.1.1.11.nupkg.sha512",
+    "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.drawing\\1.1.11\\automaticgraphlayout.drawing.1.1.11.nupkg.sha512",
+    "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.graphviewergdi\\1.1.11\\automaticgraphlayout.graphviewergdi.1.1.11.nupkg.sha512",
+    "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.wpfgraphcontrol\\1.1.11\\automaticgraphlayout.wpfgraphcontrol.1.1.11.nupkg.sha512"
+  ],
   "logs": []
 }

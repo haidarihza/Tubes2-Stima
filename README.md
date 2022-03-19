@@ -11,8 +11,9 @@ bin\Debug\net6.0-windows\Stima2.exe
 ```
 ## Anggota
 
-| Nama | NIM |
-| ---- | --- |
-| Haidar Ihza | 13520XXX |
-| Rizky Akbar | 13520XXX |
-| Muhammad Alif Putra Yasa | 13520135 |
+| Nama                      | NIM       |
+| ----                      | ---       |
+| Rizky Akbar Asmaran       | 13520111  |
+| Muhammad Alif Putra Yasa  | 13520135  |
+| Haidar Ihzaulhaq          | 13520150  |
+
