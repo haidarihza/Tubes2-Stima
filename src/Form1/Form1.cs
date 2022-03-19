@@ -17,7 +17,7 @@ namespace Stima2
         private void button1_Click(object sender, EventArgs e)
         {
 
-            FileCrawler fc = new FileCrawler();
+            FolderCrawler fc = new FolderCrawler();
             Stopwatch sw = new Stopwatch();
 
             sw.Start();
@@ -34,14 +34,12 @@ namespace Stima2
             progressBar1.Maximum = fc.fs_path.Count;
 
             GVisualizer GV = new GVisualizer(textBox1.Text);
-            foreach (string ph in fc.fs_path)
-            {
-                GV.AddSearchEntry(ph);
-                progressBar1.Value += 1;
-                textBox3.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
-            }
+            GV.Parse(fc);
+            // Not Traversed Path
             GV.Show(panel1);
             textBox3.Text = String.Format("{0}ms", sw.ElapsedMilliseconds);
+            //richTextBox1.Text = fc.f_node.toString();
+            richTextBox1.Text = String.Join("\n", fc.fs_path);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
