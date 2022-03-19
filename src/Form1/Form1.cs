@@ -34,6 +34,8 @@ namespace Stima2
             richTextBox1.Text += "Result:\n";
             progressBar1.Value = 0;
             progressBar1.Maximum = fc.results.Count + fc.bfs_path.Count;
+
+            GVisualizer GV = new GVisualizer(textBox1.Text);
             foreach (string res in fc.results)
             {
                 richTextBox1.Text += res + "\n";
@@ -42,9 +44,11 @@ namespace Stima2
             richTextBox1.Text += "Path:\n";
             foreach (string ph in fc.bfs_path)
             {
+                GV.AddSearchEntry(ph);
                 richTextBox1.Text += ph + "\n";
                 progressBar1.Value += 1;
             }
+            GV.Show();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
