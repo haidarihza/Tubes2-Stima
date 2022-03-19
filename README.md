@@ -1,6 +1,6 @@
-# Tugas Besar 2 Strategi Algoritma: File Crawler
+# Tugas Besar 2 Strategi Algoritma: Folder Crawler
 
-Membuat *File Crawler* menggunakan algoritma *BFS* dan *DFS*.
+Membuat *Folder Crawler* menggunakan algoritma *BFS* dan *DFS*.
 
 ## Run
 
@@ -16,4 +16,3 @@ bin\Debug\net6.0-windows\Stima2.exe
 | Rizky Akbar Asmaran       | 13520111  |
 | Muhammad Alif Putra Yasa  | 13520135  |
 | Haidar Ihzaulhaq          | 13520150  |
-

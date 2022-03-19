@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace Stima2
 {
     public partial class Form1 : Form
@@ -16,6 +18,9 @@ namespace Stima2
         {
 
             FileCrawler fc = new FileCrawler();
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
             if (radioButton1.Checked)
             {
                 fc.BFS(textBox1.Text, checkBox1.Checked, textBox2.Text);
@@ -23,24 +28,20 @@ namespace Stima2
             {
                 fc.DFS(textBox1.Text, checkBox1.Checked, textBox2.Text);
             }
+            sw.Stop();
 
             progressBar1.Value = 0;
-            progressBar1.Maximum = fc.results.Count + fc.bfs_path.Count;
+            progressBar1.Maximum = fc.fs_path.Count;
 
             GVisualizer GV = new GVisualizer(textBox1.Text);
-            foreach (string res in fc.results)
-            {
-                //label1.Text = (progressBar1.Value / progressBar1.Maximum).ToString();
-                progressBar1.Value += 1;
-                textBox3.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
-            }
-            foreach (string ph in fc.bfs_path)
+            foreach (string ph in fc.fs_path)
             {
                 GV.AddSearchEntry(ph);
                 progressBar1.Value += 1;
                 textBox3.Text = String.Format("{0:0.00}%", 100.0 * progressBar1.Value / progressBar1.Maximum);
             }
             GV.Show(panel1);
+            textBox3.Text = String.Format("{0}ms", sw.ElapsedMilliseconds);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

@@ -9,7 +9,7 @@ namespace Stima2
     public class FileCrawler
     {
         public List<string> results = new List<string>();
-        public List<string> bfs_path = new List<string>();
+        public List<string> fs_path = new List<string>();
 
 		public void BFS(string path, Boolean isFindAll, string search_file)
 		{
@@ -26,7 +26,7 @@ namespace Stima2
 				{
 					if (!isFound)
 					{
-						bfs_path.Add(file.FullName);
+						fs_path.Add(file.FullName);
 						if (file.Name == search_file)
 						{
 							results.Add(file.FullName);
@@ -43,7 +43,7 @@ namespace Stima2
 					string[] folders = Directory.GetDirectories(newpath);
 					foreach (var folder in folders)
 					{
-						bfs_path.Add(folder);
+						fs_path.Add(folder);
 						paths.Enqueue(folder);
 					}
 				}
@@ -57,14 +57,14 @@ namespace Stima2
 			while ((paths.Count > 0) && (!isFound))
 			{
 				string newpath = paths.Pop();
-				bfs_path.Add(newpath);
+				fs_path.Add(newpath);
 				DirectoryInfo dir = new DirectoryInfo(newpath);
 				FileInfo[] files = dir.GetFiles();
 				foreach (FileInfo file in files)
 				{
 					if (!isFound)
 					{
-						bfs_path.Add(file.FullName);
+						fs_path.Add(file.FullName);
 						if (file.Name == search_file)
 						{
 							results.Add(file.FullName);
@@ -86,7 +86,7 @@ namespace Stima2
 				}
 			}
 			// Hilangin Root Path
-			bfs_path.RemoveAt(0);
+			fs_path.RemoveAt(0);
 		}
 
 	}
