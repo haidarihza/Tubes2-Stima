@@ -38,8 +38,11 @@ namespace Stima2
             // Not Traversed Path
             GV.Show(panel1);
             textBox3.Text = String.Format("{0}ms", sw.ElapsedMilliseconds);
-            //richTextBox1.Text = fc.f_node.toString();
-            richTextBox1.Text = String.Join("\n", fc.fs_path);
+
+            richTextBox1.Text = "Tree:\n";
+            richTextBox1.Text += fc.f_node.toString();
+            richTextBox1.Text += "\nPath:\n";
+            richTextBox1.Text += String.Join("\n", fc.fs_path);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

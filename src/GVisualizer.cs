@@ -33,38 +33,39 @@ namespace Stima2
         {
             Parse(fc.f_node);         
         }
+        private Microsoft.Msagl.Drawing.Color ColorNode(Node n)
+        {
+            Microsoft.Msagl.Drawing.Color GREEN = Microsoft.Msagl.Drawing.Color.Green;
+            Microsoft.Msagl.Drawing.Color RED = Microsoft.Msagl.Drawing.Color.DarkRed;
+            Microsoft.Msagl.Drawing.Color BLACK = Microsoft.Msagl.Drawing.Color.Black;
+
+            Microsoft.Msagl.Drawing.Color color;
+
+            if (n.found)
+            {
+                color = GREEN;
+            }
+            else
+            {
+                color = RED;
+            }
+            if (!n.tr)
+            {
+                color = BLACK;
+            }
+            graph.FindNode(n.GetName()).Attr.Color = color;
+            return color;
+        }
 
         private void RecursiveParse(Node root)
         {
             if (root.children.Count != 0)
             {
-                Microsoft.Msagl.Drawing.Color GREEN = Microsoft.Msagl.Drawing.Color.Green;
-                Microsoft.Msagl.Drawing.Color RED = Microsoft.Msagl.Drawing.Color.DarkRed;
-                Microsoft.Msagl.Drawing.Color BLACK = Microsoft.Msagl.Drawing.Color.Black;
-
-                Microsoft.Msagl.Drawing.Color color;
-
                 foreach (Node c in root.children)
                 {
-                    if (c.found)
-                    {
-                        color = GREEN;
-                    }
-                    else
-                    {
-                        color = RED;
-                    }
-                    if (!c.tr)
-                    {
-                        color = BLACK;
-                    }
-                    graph.AddEdge(root.GetName(), c.GetName()).Attr.Color = color;
+                    graph.AddEdge(root.GetName(), c.GetName()).Attr.Color = ColorNode(c);
                     graph.FindNode(c.GetName()).LabelText = FolderName(c.GetName());
-                    graph.FindNode(c.GetName()).Attr.Color = color;
-                    if (root.found)
-                    {
-                        graph.FindNode(root.GetName()).Attr.Color = GREEN;
-                    }
+                    ColorNode(root);
                     RecursiveParse(c);
                 }
             }

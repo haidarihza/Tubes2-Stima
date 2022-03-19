@@ -25,7 +25,7 @@ namespace Stima2
 				string newpath = paths.Dequeue();
 				tmp = f_node.AddFolderNode(newpath);
 				tmp.tr = true;
-				//			bfs_path.Add(newpath);
+				fs_path.Add(newpath);
 				DirectoryInfo dir = new DirectoryInfo(newpath);
 				FileInfo[] files = dir.GetFiles();
 				foreach (FileInfo file in files)
@@ -51,12 +51,14 @@ namespace Stima2
 					string[] folders = Directory.GetDirectories(newpath);
 					foreach (var folder in folders)
 					{
-						fs_path.Add(folder);
-						f_node.AddFolderNode(folder);
+						//fs_path.Add(folder);
+						f_node.AddFolderNode(folder).tr = false;
 						paths.Enqueue(folder);
 					}
 				}
 			}
+			// Hilangin Root Path
+			fs_path.RemoveAt(0);
 			// Yang di queue tapi belum di-traverse
 			nt_path = paths.ToList();
 		}
@@ -98,7 +100,7 @@ namespace Stima2
 					string[] folders = Directory.GetDirectories(newpath);
 					foreach (var folder in folders.Reverse())
 					{
-						f_node.AddFolderNode(folder);
+						f_node.AddFolderNode(folder).tr = false;
 						paths.Push(folder);
 					}
 				}

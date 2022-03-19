@@ -95,9 +95,14 @@ namespace Stima2
                 parent.SetFound();
             }
         }
-        private string recToString(Node c, int level, string res)
+        private List<string> recToString(Node c, int level, List<string> res)
         {
-            res += String.Concat(Enumerable.Repeat(" ", level * 5)) + c.name +"\n";
+            //res += String.Concat(Enumerable.Repeat(" ", level * 5)) + c.name +"\n";
+            res.Add(String.Format("{0}{1}, checked = {2}, match = {3}",
+                String.Concat(Enumerable.Repeat(" ", level * 5)),
+                c.name,
+                c.tr,
+                c.found));
             
             if(c.children.Count != 0)
             {
@@ -110,7 +115,8 @@ namespace Stima2
         }
         public string toString()
         {
-            return recToString(this, 0, "");
+            List<string> res = new List<string>();
+            return String.Join("\n", recToString(this, 0, res));
         }
 
         public Node toRoot()
