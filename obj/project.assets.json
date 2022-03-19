@@ -50,6 +50,56 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       }
+    },
+    "net6.0-windows7.0/win-x64": {
+      "AutomaticGraphLayout/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AutomaticGraphLayout.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutomaticGraphLayout.dll": {}
+        }
+      },
+      "AutomaticGraphLayout.Drawing/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "AutomaticGraphLayout": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutomaticGraphLayout.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutomaticGraphLayout.Drawing.dll": {}
+        }
+      },
+      "AutomaticGraphLayout.GraphViewerGDI/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "AutomaticGraphLayout.Drawing": "1.1.11"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Msagl.GraphViewerGdi.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Msagl.GraphViewerGdi.dll": {}
+        }
+      },
+      "AutomaticGraphLayout.WpfGraphControl/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "AutomaticGraphLayout.Drawing": "1.1.11"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Msagl.WpfGraphControl.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Msagl.WpfGraphControl.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
     }
   },
   "libraries": {
@@ -131,7 +181,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -180,6 +230,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[6.0.3, 6.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[6.0.3, 6.0.3]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[6.0.3, 6.0.3]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -189,6 +253,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

@@ -2,13 +2,24 @@
 
 Membuat *Folder Crawler* menggunakan algoritma *BFS* dan *DFS*.
 
-## Run
+## Commands
 
-*Executable* ada di:
+### Build (Multiple Files)
 
 ```
-bin\Debug\net6.0-windows\Stima2.exe
+make build
 ```
+
+Aplikasi akan terbagi menjadi satu `.exe` dan beberapa `.dll`. Untuk menjalankan `.exe` nya diperlukan `.dll`-nya.
+
+## Build (One File)
+
+```
+make compile
+```
+
+Aplikasi akan terbagi menjadi satu `.exe`. File `.exe` tidak memerlukan file tambahan.
+
 ## Anggota
 
 | Nama                      | NIM       |
