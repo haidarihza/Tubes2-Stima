@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\Stima2.csproj": {}
+    "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\Stima2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\Stima2.csproj": {
+    "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\Stima2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\Stima2.csproj",
+        "projectUniqueName": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\Stima2.csproj",
         "projectName": "Stima2",
-        "projectPath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\Stima2.csproj",
+        "projectPath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\Stima2.csproj",
         "packagesPath": "C:\\Users\\Alif Yasa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima - Copy\\obj\\",
+        "outputPath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alif Yasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
