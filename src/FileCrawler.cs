@@ -85,6 +85,8 @@ namespace Stima2
 					}
 				}
 			}
+			// Hilangin Root Path
+			bfs_path.RemoveAt(0);
 		}
 
 	}
