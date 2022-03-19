@@ -81,5 +81,10 @@ namespace Stima2
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

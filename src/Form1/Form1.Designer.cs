@@ -42,7 +42,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(63, 340);
+            this.button1.Location = new System.Drawing.Point(77, 366);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(45, 142);
+            this.radioButton1.Location = new System.Drawing.Point(45, 175);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(44, 19);
             this.radioButton1.TabIndex = 1;
@@ -66,7 +66,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(45, 167);
+            this.radioButton2.Location = new System.Drawing.Point(45, 200);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(45, 19);
             this.radioButton2.TabIndex = 2;
@@ -77,14 +77,17 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(45, 45);
+            this.textBox1.MaxLength = 100;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(601, 23);
+            this.textBox1.PlaceholderText = "File Path";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(600, 23);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "File Path";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(651, 45);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(664, 45);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -94,11 +97,12 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(200, 90);
+            this.richTextBox1.Location = new System.Drawing.Point(213, 90);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(526, 273);
+            this.richTextBox1.Size = new System.Drawing.Size(526, 299);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // folderBrowserDialog1
             // 
@@ -108,15 +112,15 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(45, 90);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "File Name";
             this.textBox2.Size = new System.Drawing.Size(149, 23);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "File Name";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(45, 119);
+            this.checkBox1.Location = new System.Drawing.Point(45, 136);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(66, 19);
             this.checkBox1.TabIndex = 7;
@@ -126,9 +130,9 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(45, 399);
+            this.progressBar1.Location = new System.Drawing.Point(45, 415);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(681, 23);
+            this.progressBar1.Size = new System.Drawing.Size(694, 23);
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 8;
             // 
@@ -136,7 +140,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox2);
