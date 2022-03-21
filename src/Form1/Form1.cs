@@ -94,5 +94,15 @@ namespace Stima2
             string argument = "/select, \"" + e.LinkText + "\"";
             System.Diagnostics.Process.Start("explorer.exe", argument);
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
