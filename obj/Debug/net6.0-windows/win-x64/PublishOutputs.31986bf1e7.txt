@@ -1,7 +1,0 @@
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\Stima2.pdb
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\D3DCompiler_47_cor3.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\PenImc_cor3.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\PresentationNative_cor3.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\vcruntime140_cor3.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\wpfgfx_cor3.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\publish\Stima2.exe
