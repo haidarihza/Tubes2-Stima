@@ -32,21 +32,15 @@ namespace Stima2
 
             GVisualizer GV = new GVisualizer(textBox1.Text);
             GV.Parse(fc);
-            // Not Traversed Path
             GV.Show(panel1);
             label1.Text = String.Format("{0} Result(s) in {1}ms", fc.results.Count, sw.ElapsedMilliseconds);
 
-            //richTextBox1.Text = "Result:\n";
             if (fc.results.Count != 0) { 
                 richTextBox1.Text = "file://" + String.Join("\nfile://", fc.results); 
             } else
             {
                 richTextBox1.Text = "";
             }
-            //richTextBox1.Text = "Tree:\n";
-            //richTextBox1.Text += fc.f_node.toString();
-            //richTextBox1.Text += "\nPath:\n";
-            //richTextBox1.Text += String.Join("\n", fc.fs_path);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
