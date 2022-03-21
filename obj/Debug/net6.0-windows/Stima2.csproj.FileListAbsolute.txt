@@ -36,7 +36,6 @@ C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\Stima2
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\Stima2.deps.json
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\Stima2.runtimeconfig.json
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\Stima2.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\Stima2.pdb
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\AutomaticGraphLayout.dll
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\AutomaticGraphLayout.Drawing.dll
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Debug\net6.0-windows\Microsoft.Msagl.GraphViewerGdi.dll
@@ -51,6 +50,5 @@ C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\Stima2
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\Stima2.csproj.CopyComplete
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\Stima2.dll
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\refint\Stima2.dll
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\Stima2.pdb
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\Stima2.genruntimeconfig.cache
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\obj\Debug\net6.0-windows\ref\Stima2.dll

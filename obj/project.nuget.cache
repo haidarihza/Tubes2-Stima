@@ -1,16 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+RRTwZ1tBo+LrXGaYh0Cfl5bm6lj23Mov33gwN7LUWDLFwa0NtwkNPmpuzscaYdOCqpTCRC/TtX2C1L+Xci9fg==",
+  "dgSpecHash": "Va1yIv/rVU6Xdm3yPKVYth8zJPch/QeavdX0an9oBWTRLFdzZFMLd3XtrOir34r7KUWmWACctTuA1/CyN5XFmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alif Yasa\\Documents\\GitHub\\Tubes2-Stima\\Stima2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout\\1.1.11\\automaticgraphlayout.1.1.11.nupkg.sha512",
     "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.drawing\\1.1.11\\automaticgraphlayout.drawing.1.1.11.nupkg.sha512",
     "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.graphviewergdi\\1.1.11\\automaticgraphlayout.graphviewergdi.1.1.11.nupkg.sha512",
-    "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.wpfgraphcontrol\\1.1.11\\automaticgraphlayout.wpfgraphcontrol.1.1.11.nupkg.sha512",
-    "C:\\Users\\Alif Yasa\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.3\\microsoft.netcore.app.runtime.win-x64.6.0.3.nupkg.sha512",
-    "C:\\Users\\Alif Yasa\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.3.nupkg.sha512",
-    "C:\\Users\\Alif Yasa\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.3\\microsoft.aspnetcore.app.runtime.win-x64.6.0.3.nupkg.sha512"
+    "C:\\Users\\Alif Yasa\\.nuget\\packages\\automaticgraphlayout.wpfgraphcontrol\\1.1.11\\automaticgraphlayout.wpfgraphcontrol.1.1.11.nupkg.sha512"
   ],
   "logs": []
 }

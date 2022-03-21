@@ -1,4 +1,3 @@
-C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Publish\Stima2.pdb
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Publish\D3DCompiler_47_cor3.dll
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Publish\PenImc_cor3.dll
 C:\Users\Alif Yasa\Documents\GitHub\Tubes2-Stima\bin\Publish\PresentationNative_cor3.dll
