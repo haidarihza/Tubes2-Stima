@@ -41,7 +41,7 @@ namespace Stima2
             {
                 richTextBox1.Text = "";
             }
-			richTextBox1.Text += "Check Sequence\n";
+			richTextBox1.Text += "\nCheck Sequence\n";
 			richTextBox1.Text += String.Join("\n", fc.fs_path);
         }
 
