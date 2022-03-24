@@ -13,6 +13,8 @@ Selain pohon, Anda diminta juga menampilkan list path dari daun-daun yang berses
 hasil pencarian. Path tersebut diharuskan memiliki hyperlink menuju folder parent dari file yang 
 dicari, agar file langsung dapat diakses melalui browser atau file explorer. 
 
+## Requirement
+
 ## Build
 
 Aplikasi dapat di-*build* dengan dua cara, sebagai `.exe` dengan beberapa file ekstensi, atau sebagai satu file `.exe` dan tidak membutuhkan apapun.
