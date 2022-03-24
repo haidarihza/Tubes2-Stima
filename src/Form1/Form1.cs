@@ -41,6 +41,8 @@ namespace Stima2
             {
                 richTextBox1.Text = "";
             }
+			richTextBox1.Text += "Check Sequence\n";
+			richTextBox1.Text += String.Join("\n", fc.fs_path);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
