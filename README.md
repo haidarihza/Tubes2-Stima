@@ -3,6 +3,15 @@
 Membuat *Folder Crawler* menggunakan algoritma *BFS* dan *DFS*.
 
 ## Deskripsi
+Dalam tugas besar ini, Anda akan diminta untuk membangun sebuah aplikasi GUI sederhana 
+yang dapat memodelkan fitur dari file explorer pada sistem operasi, yang pada tugas ini disebut 
+dengan Folder Crawling. Dengan memanfaatkan algoritma Breadth First Search (BFS) dan Depth 
+First Search (DFS), Anda dapat menelusuri folder-folder yang ada pada direktori untuk 
+mendapatkan direktori yang Anda inginkan. Anda juga diminta untuk memvisualisasikan hasil dari 
+pencarian folder tersebut dalam bentuk pohon.
+Selain pohon, Anda diminta juga menampilkan list path dari daun-daun yang bersesuaian dengan 
+hasil pencarian. Path tersebut diharuskan memiliki hyperlink menuju folder parent dari file yang 
+dicari, agar file langsung dapat diakses melalui browser atau file explorer. 
 
 ## Build
 
