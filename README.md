@@ -14,6 +14,9 @@ hasil pencarian. Path tersebut diharuskan memiliki hyperlink menuju folder paren
 dicari, agar file langsung dapat diakses melalui browser atau file explorer. 
 
 ## Requirement
+- C#
+- Visual Studio 2022
+- Library MSAGL
 
 ## Build
 
